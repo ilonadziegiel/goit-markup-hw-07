@@ -104,7 +104,7 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.list-box__clients {
+.list-box__icon {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -114,8 +114,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-box__clients:hover,
-.list-box__clients:focus {
+.list-box__icon:hover,
+.list-box__icon:focus {
   fill: var(--brand-color);
   border: 1px solid var(--brand-color);
 }
