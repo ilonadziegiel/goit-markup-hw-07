@@ -17,6 +17,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section--padding {
+  padding-bottom: 0px;
+}
 .section__header {
   font-weight: 700;
   font-size: 36px;
@@ -34,7 +37,66 @@ body {
   column-gap: 30px;
   padding: 0;
 }
-.list-box__team {
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  row-gap: 10px;
+  max-width: 270px;
+}
+
+.card__background {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
+.card__icon {
+  margin-top: 25px;
+  margin-right: 102px;
+  margin-bottom: 25px;
+  margin-left: 102px;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.card__description {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+.list-box__image {
+  flex-basis: calc((100%-60px) / 3);
+  position: relative;
+  max-width: 370px;
+  max-height: 294px;
+}
+.list-box__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--font-color2);
+  text-align: center;
+  padding: 27px 90px 27px 90px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.list-box__business-card {
   flex-basis: calc((100%-90px) / 4);
   list-style: none;
   background-color: var(--font-color2);
@@ -57,13 +119,12 @@ body {
   fill: var(--brand-color);
   border: 1px solid var(--brand-color);
 }
-.names {
+.name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   padding: 30px 99px 10px 99px;
-  margin: 0;
 }
 .job-title {
   color: #757575;
@@ -73,7 +134,6 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   white-space: nowrap;
-  margin: 0;
 }
 
 .icon-box {
@@ -193,34 +253,6 @@ body {
   margin-bottom: 30px;
 }
 
-.description {
-  color: #757575;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  margin: 0;
-}
-.activity-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0;
-}
-
-.third-header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
 .projects-title {
   font-weight: 700;
   font-size: 18px;
@@ -315,39 +347,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.advantages-box {
-  display: flex;
-  column-gap: 30px;
-  margin: 0 auto;
-}
-.advantages-box-inside {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: 94px;
-  row-gap: 10px;
-}
-.activity-header-box {
-  justify-content: center;
-  margin-top: 94px;
-}
-.card-activity {
-  display: flex;
-  flex-wrap: nowrap;
-  column-gap: 30px;
-  padding: 0;
-  justify-content: space-between;
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
-.images-activity-style {
-  flex-basis: calc((100%-60px) / 3);
-  list-style: none;
-  position: relative;
-  max-width: 370px;
-  max-height: 294px;
-}
 
 .footer-list {
   list-style-type: none;
@@ -404,18 +403,6 @@ body {
 }
 .portfolio-box {
   background-color: #ffffff;
-}
-
-.advantages-icon-background {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-}
-.advantages-icon-style {
-  margin-top: 25px;
-  margin-right: 102px;
-  margin-bottom: 25px;
-  margin-left: 102px;
 }
 
 .social-header {
@@ -674,54 +661,7 @@ body {
   border-radius: 2px;
   background-color: var(--brand-color);
 }
-.image-desktop-app {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--font-color2);
-  text-align: center;
-  padding: 27px 90px 27px 90px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  margin: 0;
-  text-transform: uppercase;
-}
-.image-mobile-app {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--font-color2);
-  text-align: center;
-  padding: 27px 90px 27px 90px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  margin: 0;
-  text-transform: uppercase;
-}
-.image-graphic {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--font-color2);
-  text-align: center;
-  padding: 27px 90px 27px 90px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  margin: 0;
-  text-transform: uppercase;
-}
+
 .contact-label {
   font-weight: 400;
   font-size: 12px;
