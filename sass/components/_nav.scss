@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  column-gap: 46px;
+  padding-left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  flex-grow: 2;
+  &__link {
+    color: $primaryfontColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover {
+    color: $brandColor;
+  }
+  &__link:focus {
+    color: $brandColor;
+  }
+  &__underline {
+    position: relative;
+  }
+  &__underline::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 53px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $brandColor;
+  }
+  &__underline--width::after {
+    width: 58px;
+  }
+}
