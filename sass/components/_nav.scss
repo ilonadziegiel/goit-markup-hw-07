@@ -9,25 +9,11 @@
   flex-grow: 2;
   &__link {
     color: $primaryfontColor;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__link:hover {
-    color: $brandColor;
-  }
-  &__link:focus {
-    color: $brandColor;
-  }
-  &__underline {
+  &__item {
     position: relative;
   }
-  &__underline::after {
+  &__item--active::after {
     content: "";
     position: absolute;
     top: 48px;
@@ -37,7 +23,7 @@
     border-radius: 2px;
     background-color: $brandColor;
   }
-  &__underline--width::after {
+  &__item--width::after {
     width: 58px;
   }
 }

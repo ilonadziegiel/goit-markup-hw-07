@@ -6,6 +6,9 @@
   text-align: center;
   border: none;
   cursor: pointer;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
   transition-property: color, background-color, fill, box-shadow;
   transition-duration: $transitionDuration;
   transition-timing-function: $transitionTiming;

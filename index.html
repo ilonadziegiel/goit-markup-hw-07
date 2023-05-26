@@ -25,19 +25,17 @@
           >
         </nav>
         <ul class="nav">
-          <li>
-            <div class="nav__underline">
-              <a class="link nav__link" href="./index.html">Agencja</a>
-            </div>
+          <li class="nav__item nav__item--active">
+            <a class="link nav__link" href="./index.html">Agencja</a>
           </li>
           <li>
             <a class="link nav__link" href="./portfolio.html">Portfolio</a>
           </li>
           <li><a class="link nav__link" href="#">Kontakt</a></li>
         </ul>
-        <ul class="contact">
+        <ul class="header__contact">
           <li>
-            <a href="mailto:info@devstudio.com" class="contact__link">
+            <a href="mailto:info@devstudio.com" class="link header__link">
               <svg width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -45,7 +43,7 @@
             </a>
           </li>
           <li>
-            <a href="tel:48111111111" class="contact__link">
+            <a href="tel:48111111111" class="link header__link">
               <svg width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -543,11 +541,9 @@
             </a>
           </div>
         </div>
-        <div>
-          <h3 class="footer__header footer__header--padding">
-            Zapisz się do newslettera
-          </h3>
+        <div class="footer__button-box">
           <form>
+            <label class="footer__header">Zapisz się do newslettera</label>
             <label class="footer__label"
               ><input
                 type="email"
@@ -556,8 +552,6 @@
                 class="footer__input"
             /></label>
           </form>
-        </div>
-        <div class="footer__button-box">
           <button type="submit" class="button footer__button">
             Zapisz się
             <svg width="24" height="24" class="button__icon">
